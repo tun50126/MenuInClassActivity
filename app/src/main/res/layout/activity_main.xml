@@ -10,10 +10,9 @@
         android:id="@+id/startButton"
         android:layout_width="100dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="56dp"
         android:backgroundTint="#00FF00"
         android:text="Start"
-        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintBottom_toBottomOf="@+id/stopButton"
         app:layout_constraintEnd_toStartOf="@+id/stopButton"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -21,22 +20,32 @@
         android:id="@+id/pauseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
         android:text="Pause"
-        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintBottom_toBottomOf="@+id/stopButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toEndOf="@+id/stopButton" />
 
     <Button
         android:id="@+id/stopButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="324dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#ff0000"
         android:text="Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#F3DB03"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toTopOf="@+id/stopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
